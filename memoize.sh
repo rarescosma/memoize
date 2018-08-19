@@ -1,6 +1,6 @@
 memoize() {
     local _ cache key exists timecheck
-    cache="${XDG_CACHE_HOME:-$HOME/.cache}/memoize"
+    cache="${XDG_CACHE_HOME:-$HOME/.cache}/memoize/${$}"
     if [ ! -d "${cache}" ]; then
         mkdir -p "${cache}"
     fi
